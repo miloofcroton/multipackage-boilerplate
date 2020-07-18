@@ -1,4 +1,9 @@
 {
   "name": "multipackage-boilerplate",
-  "private": true
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+		"test": "yarn workspaces run test",
+    "start:site": "yarn workspace site start"
+  }
 }
